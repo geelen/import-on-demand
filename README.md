@@ -58,7 +58,7 @@ When run, `npx-import` will log out some explanation, as well as instructions fo
 ```sh
 ❯ node ./index.js --filename=image.png
 
-This is a PNG! We'll have to compile imagemagick!
+This is a PNG! We’ll have to compile imagemagick!
 [NPXI] imagemagick-utils not available locally. Attempting to use npx to install temporarily.
 [NPXI] Installing... (npx -y -p imagemagick-utils@^1.1.0)
 [NPXI] Installed into /Users/glen/.npm/_npx/8cac855b1579fd07/node_modules.
@@ -120,7 +120,7 @@ Note: there is a speed benefit from using exact versions. `npxImport(pkg-a@1.2.3
 const [depA, depB] = await npxImport(['dep-a@7.8.2', 'dep-b@7.8.2'])
 ```
 
-`npx-import` also takes a third argument, which lets you customise, or silence, the log output. Each line that would normally be printed is passed to the logger function:
+`npx-import` also takes a second argument, which lets you customise, or silence, the log output. Each line that would normally be printed is passed to the logger function:
 
 ```js
 const grayLog = (line: string) => console.log(chalk.gray(line))

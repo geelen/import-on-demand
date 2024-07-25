@@ -120,7 +120,7 @@ Note: there is a speed benefit from using exact versions. `npxImport(pkg-a@1.2.3
 const [depA, depB] = await npxImport(['dep-a@7.8.2', 'dep-b@7.8.2'])
 ```
 
-`npx-import` also takes a third argument, which lets you customise, or silence, the log output. Each line that would normally be printed is passed to the logger function:
+`npx-import` also takes a second argument, which lets you customise, or silence, the log output. Each line that would normally be printed is passed to the logger function:
 
 ```js
 const grayLog = (line: string) => console.log(chalk.gray(line))

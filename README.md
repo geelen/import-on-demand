@@ -58,7 +58,7 @@ When run, `npx-import` will log out some explanation, as well as instructions fo
 ```sh
 ❯ node ./index.js --filename=image.png
 
-This is a PNG! We'll have to compile imagemagick!
+This is a PNG! We’ll have to compile imagemagick!
 [NPXI] imagemagick-utils not available locally. Attempting to use npx to install temporarily.
 [NPXI] Installing... (npx -y -p imagemagick-utils@^1.1.0)
 [NPXI] Installed into /Users/glen/.npm/_npx/8cac855b1579fd07/node_modules.
